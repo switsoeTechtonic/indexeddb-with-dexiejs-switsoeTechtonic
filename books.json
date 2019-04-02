@@ -32,6 +32,14 @@
         "title":"Harry Potter and the Sorcerer's Stone"
     },
     {
+    "author": "Bob Smith",
+    "numberOfPages": 222,
+    "publishDate": "2015-08-16",
+    "rating": 3,
+    "synopsis": "Stupid story-Delete",
+    "title": "Dumb Book"
+    },
+    {
         "author":"JK Rowling",
         "numberOfPages": 300,
         "publishDate":"2002-03-17",

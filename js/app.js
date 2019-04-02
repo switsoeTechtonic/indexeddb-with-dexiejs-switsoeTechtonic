@@ -8,9 +8,11 @@ function onDatabaseReady() {
 
 function deleteBook(event) {
 
-    // 1: YOUR CODE HERE
-db.books.delete(event);
-}
+  db.books.delete(event);
+
+};
+
+
 //ran ---> deleteBook("IT") ---> in console
 
 function addBook(event) {
@@ -23,7 +25,7 @@ db.books.add(event)
 
 //ran ---> addBook(
 
-
+}
 // ran --->
 // addBook(
 // {
@@ -35,22 +37,34 @@ db.books.add(event)
 //   "title": "Ready Player One"
 // }
 // )
+
+// addBook(
+// {
+//   "author": "John Smith",
+//   "numberOfPages": 222,
+//   "publishDate": "2015-08-16",
+//   "rating": 3,
+//   "synopsis": "long story",
+//   "title": "My Book"
+// }
+
 // ---> in console
 
 
 
 
-function editBook(event) {
+function editBook(event,event2) {
 
     // 3. YOUR CODE HERE
-    db.books.put(event);
+    db.books.update(event,event2);
 
   };
 
 
 // ran --->
 // editBook(
-//   "rating": 1
+// "Ready Player One",
+// {rating: 1}
 // );
 // ---> in console
 
