@@ -21,7 +21,7 @@ function addBook(event) {
 
     // Hint: Once you've added the book to your database, call populateTableUI with the added book's title
     // Check out the Table.put() method and what it returns at: https://dexie.org/docs/Table/Table.put()
-db.books.add(event)
+    db.books.add(event)
 
 //ran ---> addBook(
 

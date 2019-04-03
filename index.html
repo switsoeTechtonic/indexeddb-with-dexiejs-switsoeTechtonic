@@ -59,7 +59,34 @@
                 <input type="date" id="inputDate" class="form-control">
               </div>
             </div>
-            <button class="btn btn-primary" type="submit" onclick="addBook(event)">Submit</button>
+            <button class="btn btn-primary" id="sub-btn" type="submit"
+            onclick='addBook(
+            {
+              "author": document.getElementById("inputAuthor").value,
+              "numberOfPages": document.getElementById("inputPages").value,
+              "publishDate": document.getElementById("inputDate").value,
+              "rating": document.getElementById("inputRating").value,
+              "synopsis": document.getElementById("inputSynopsis").value,
+              "title": document.getElementById("inputTitle").value
+            })'>Submit</button>
+
+
+<!-- this will take the input and send it to the alert window -->
+            <!-- "alert(document.getElementById('inputPages').value)">Submit</button> -->
+
+<!-- This adds a book to the DB if hardcoded -->
+            <!-- 'addBook(
+            {
+              "author": "Scott",
+              "numberOfPages": 999,
+              "publishDate": "2000-08-16",
+              "rating": 3,
+              "synopsis": "story",
+              "title": "The"
+            })'>Submit</button> -->
+
+
+
           </form>
       <script defer src="http://unpkg.com/dexie@latest/dist/dexie.js"></script>
       <script defer src="./js/indexedDB.js"></script>
@@ -67,3 +94,25 @@
       <script defer src="./js/populate-table.js"></script>
   </body>
 </html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+
+	b: <input type="text" name="b" id="b"><br>
+	<button onclick="add(document.getElementById('b').value)">Add</button>
+
+    <script type="text/javascript">
+		function add(b) {
+			var sum = b;
+			alert(sum);
+		}
+	</script>
+</body>
+</html> -->
